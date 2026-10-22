@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "Electrician Service Areas | Central Victoria",
   description:
     "Chuck E Electrical services Seymour, Euroa, Broadford, Kilmore, Nagambie, Wallan, Heathcote and all surrounding towns in Central Victoria. Call 0413 091 102.",
+  openGraph: {
+    title: 'Electrician Service Areas | Central Victoria',
+    description: 'Chuck E Electrical services Seymour, Euroa, Broadford, Kilmore, Nagambie, Wallan, Heathcote and all surrounding towns in Central Victoria. Call 0413 091 102.',
+  },
 };
 
 export default function LocationsPage() {
