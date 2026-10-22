@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "Electrical Blog | Tips & Advice from Central Victoria",
   description:
     "Electrical tips, safety advice, and industry news from the team at Chuck E Electrical — licensed electricians serving Central Victoria.",
+  openGraph: {
+    title: 'Electrical Blog | Tips & Advice from Central Victoria',
+    description: 'Electrical tips, safety advice, and industry news from the team at Chuck E Electrical — licensed electricians serving Central Victoria.',
+  },
 };
 
 export const revalidate = 60;
