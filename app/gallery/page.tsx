@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "Electrical Work Gallery | Central Victoria",
   description:
     "Examples of electrical work by Chuck E Electrical — commercial, industrial, residential, and rural projects in Central Victoria. View our gallery.",
+  openGraph: {
+    title: 'Electrical Work Gallery | Central Victoria',
+    description: 'Examples of electrical work by Chuck E Electrical — commercial, industrial, residential, and rural projects in Central Victoria. View our gallery.',
+  },
 };
 
 const GALLERY_ITEMS = [
