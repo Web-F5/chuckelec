@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { existsSync } from "fs";
+import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { TOWNS, SERVICES, CONTACT } from "@/lib/data";
@@ -16,9 +18,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const town = TOWNS.find((t) => t.slug === slug);
   if (!town) return {};
+  const title = `Electrician ${town.name} | Chuck E Electrical`;
+  const description = `Need a licensed electrician in ${town.name} VIC ${town.postcode}? Chuck E Electrical serves ${town.name} and surrounds. A-grade licensed, 30+ years experience. Free quotes. Call 0413 091 102.`;
+  const heroImage = `/images/locations/hero-${slug}.webp`;
+  const hasHeroImage = existsSync(path.join(process.cwd(), "public", heroImage));
   return {
-    title: `Electrician ${town.name} | Chuck E Electrical`,
-    description: `Need a licensed electrician in ${town.name} VIC ${town.postcode}? Chuck E Electrical serves ${town.name} and surrounds. A-grade licensed, 30+ years experience. Free quotes. Call 0413 091 102.`,
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `/locations/${slug}`,
+      siteName: "Chuck E Electrical",
+      locale: "en_AU",
+      type: "website",
+      images: hasHeroImage
+        ? [{ url: heroImage, alt: `Electrician in ${town.name}, VIC` }]
+        : undefined,
+    },
   };
 }
 
@@ -52,7 +69,7 @@ export default async function TownPage({ params }: Props) {
             "@context": "https://schema.org",
             "@type": "ElectricalContractor",
             name: "Chuck E Electrical",
-            url: `https://chuckelec.com.au/locations/${slug}`,
+            url: `https://chuckelec.com/locations/${slug}`,
             telephone: [CONTACT.phone1],
             description: `Licensed electricians serving ${town.name}, VIC ${town.postcode} and surrounding areas.`,
             areaServed: {

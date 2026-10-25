@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     "Chuck E Electrical — licensed electricians serving Seymour and Central Victoria for over 30 years. Residential, commercial, industrial, and rural electrical services. Call 0413 091 102.",
-  metadataBase: new URL("https://chuckelec.com.au"),
+  metadataBase: new URL("https://chuckelec.com"),
   openGraph: {
     siteName: "Chuck E Electrical",
     locale: "en_AU",
@@ -43,7 +43,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ElectricalContractor",
               name: "Chuck E Electrical",
-              url: "https://chuckelec.com.au",
+              url: "https://chuckelec.com",
               telephone: ["0413091102", "0427500966"],
               email: "info@chuckelec.com.au",
               description:

@@ -42,6 +42,25 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `/blog/${slug}`,
+      siteName: "Chuck E Electrical",
+      locale: "en_AU",
+      type: "article",
+      publishedTime: post.publishedAt,
+      images: post.mainImage
+        ? [
+            {
+              url: urlFor(post.mainImage).width(1200).height(630).url(),
+              width: 1200,
+              height: 630,
+              alt: post.mainImage.alt ?? post.title,
+            },
+          ]
+        : undefined,
+    },
   };
 }
 

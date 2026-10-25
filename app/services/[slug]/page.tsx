@@ -19,6 +19,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: service.metaTitle,
     description: service.metaDescription,
+    openGraph: {
+      title: service.metaTitle,
+      description: service.metaDescription,
+      url: `/services/${slug}`,
+      siteName: "Chuck E Electrical",
+      locale: "en_AU",
+      type: "website",
+    },
   };
 }
 
