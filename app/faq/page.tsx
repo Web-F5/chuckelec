@@ -6,10 +6,6 @@ export const metadata: Metadata = {
   title: "Electrical Contractor FAQ Victoria",
   description:
     "Frequently asked questions about hiring a licensed electrical contractor in Victoria. Licensing, insurance, certificates, safety switches and more. Chuck E Electrical.",
-  openGraph: {
-    title: 'Electrical Contractor FAQ Victoria',
-    description: 'Frequently asked questions about hiring a licensed electrical contractor in Victoria. Licensing, insurance, certificates, safety switches and more. Chuck E Electrical.',
-  },
 };
 
 const FAQ_ITEMS = [

@@ -7,10 +7,6 @@ export const metadata: Metadata = {
   title: "Electrical Services Central Victoria",
   description:
     "Full range of electrical services in Central Victoria — new installations, lighting, switchboards, data cabling, fire detection, generator connections, and more. A-grade licensed. Call 0413 091 102.",
-  openGraph: {
-    title: 'Electrical Services Central Victoria',
-    description: 'Full range of electrical services in Central Victoria — new installations, lighting, switchboards, data cabling, fire detection, generator connections, and more. A-grade licensed. Call 0413 091 102.',
-  },
 };
 
 const SERVICE_CATEGORIES = [

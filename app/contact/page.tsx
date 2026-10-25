@@ -6,10 +6,6 @@ export const metadata: Metadata = {
   title: "Contact Licensed Electricians Central Victoria",
   description:
     "Contact Chuck E Electrical for a free quote. Licensed electricians serving Seymour and Central Victoria. Call 0413 091 102.",
-  openGraph: {
-    title: 'Contact Licensed Electricians Central Victoria',
-    description: 'Contact Chuck E Electrical for a free quote. Licensed electricians serving Seymour and Central Victoria. Call 0413 091 102.',
-  },
 };
 
 export default function ContactPage() {
