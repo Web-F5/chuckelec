@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type React from "react";
 import Link from "next/link";
 import { CONTACT, SERVICES, TOWNS } from "@/lib/data";
 import CTASection from "@/components/CTASection";
@@ -10,6 +11,44 @@ export const metadata: Metadata = {
   description:
     "Chuck E Electrical — licensed electricians serving Seymour and Central Victoria for over 30 years. Residential, commercial, industrial and rural. Call 0413 091 102.",
 };
+
+const SERVICE_ICONS: Record<string, React.ReactNode> = {
+  "lighting-installations": (
+    <svg className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M9 21h6v-1H9v1zm3-19C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17h8v-2.26C17.81 13.47 19 11.38 19 9c0-3.87-3.13-7-7-7z"/>
+    </svg>
+  ),
+  "home-automation-installations": (
+    <svg className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+      <rect x="5" y="7" width="14" height="11" rx="2"/>
+      <circle cx="9.5" cy="12" r="1" fill="currentColor" stroke="none"/>
+      <circle cx="14.5" cy="12" r="1" fill="currentColor" stroke="none"/>
+      <path d="M9 16h6M12 7V4"/>
+      <circle cx="12" cy="3" r="1" fill="currentColor" stroke="none"/>
+    </svg>
+  ),
+  "switchboard-installation": (
+    <svg className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17 7H7a5 5 0 000 10h10a5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6z"/>
+    </svg>
+  ),
+  "data-cabling": (
+    <svg className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M16 7V3h-2v4h-4V3H8v4a4 4 0 002.97 3.84L11 19h2l.03-8.16A4 4 0 0016 7z"/>
+    </svg>
+  ),
+  "fire-detection-installation": (
+    <svg className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+    </svg>
+  ),
+};
+
+const DEFAULT_SERVICE_ICON = (
+  <svg className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+  </svg>
+);
 
 const FEATURED_SERVICES = [
   "lighting-installations",
@@ -229,13 +268,7 @@ export default function HomePage() {
                 className="bg-white rounded-xl p-6 border border-[#e9ecef] hover:border-[#2a4861] hover:shadow-lg transition-all group"
               >
                 <div className="w-10 h-10 bg-[#2a4861]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#2a4861] transition-colors">
-                  <svg
-                    className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
+                  {SERVICE_ICONS[service.slug] ?? DEFAULT_SERVICE_ICON}
                 </div>
                 <h3 className="font-display font-bold text-xl text-[#2a4861] mb-2">
                   {service.title}
