@@ -11,7 +11,10 @@ export const metadata: Metadata = {
 };
 
 const CATEGORY_IMAGES: Record<string, string> = {
-  "Lighting & Automation": "/images/gallery/officePendants.webp",
+  "Installations & Repairs": "/images/gallery/shed-lighting.webp",
+  "Lighting & Automation": "/images/gallery/sports-field-lighting.webp",
+  "Power & Switchboards": "/images/gallery/shed-powerpoint.webp",
+  "Cabling & Communications": "/images/gallery/underground-cabling.webp",
 };
 
 const SERVICE_CATEGORIES = [
