@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { existsSync } from "fs";
+import path from "path";
 import Link from "next/link";
+import Image from "next/image";
 import { TOWNS, CONTACT } from "@/lib/data";
 import CTASection from "@/components/CTASection";
 
@@ -31,28 +34,45 @@ export default function LocationsPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {TOWNS.map((town) => (
-              <Link
-                key={town.slug}
-                href={`/locations/${town.slug}`}
-                className="bg-[#f8f9fa] rounded-xl p-5 border border-[#e9ecef] hover:border-[#2a4861] hover:bg-white hover:shadow-md transition-all group"
-              >
-                <div className="flex items-start justify-between mb-2">
-                  <h2 className="font-display font-bold text-xl text-[#2a4861] group-hover:text-[#5d7b94] transition-colors">
-                    {town.name}
-                  </h2>
-                  <span className="text-[#ced4da] text-xs mt-1">
-                    {town.postcode}
-                  </span>
-                </div>
-                <p className="text-[#6c757d] text-xs leading-relaxed mb-3 line-clamp-2">
-                  {town.character}
-                </p>
-                <span className="text-[#f5b840] text-xs font-semibold">
-                  Electrician {town.name} →
-                </span>
-              </Link>
-            ))}
+            {TOWNS.map((town) => {
+              const heroPath = `/images/locations/hero-${town.slug}.webp`;
+              const hasHero = existsSync(path.join(process.cwd(), "public", heroPath));
+              return (
+                <Link
+                  key={town.slug}
+                  href={`/locations/${town.slug}`}
+                  className="rounded-xl border border-[#e9ecef] hover:border-[#2a4861] hover:shadow-md transition-all group overflow-hidden bg-[#f8f9fa]"
+                >
+                  {hasHero && (
+                    <div className="relative w-full h-32 overflow-hidden">
+                      <Image
+                        src={heroPath}
+                        alt={town.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-[#2a4861]/30 group-hover:bg-[#2a4861]/20 transition-colors" />
+                    </div>
+                  )}
+                  <div className="p-5">
+                    <div className="flex items-start justify-between mb-2">
+                      <h2 className="font-display font-bold text-xl text-[#2a4861] group-hover:text-[#5d7b94] transition-colors">
+                        {town.name}
+                      </h2>
+                      <span className="text-[#ced4da] text-xs mt-1">
+                        {town.postcode}
+                      </span>
+                    </div>
+                    <p className="text-[#6c757d] text-xs leading-relaxed mb-3 line-clamp-2">
+                      {town.character}
+                    </p>
+                    <span className="text-[#f5b840] text-xs font-semibold">
+                      Electrician {town.name} →
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

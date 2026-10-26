@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { SERVICES, CONTACT } from "@/lib/data";
 import CTASection from "@/components/CTASection";
+
+const SERVICE_HERO_IMAGES: Record<string, string> = {
+  "lighting-installations": "/images/gallery/officePendants.webp",
+};
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -36,12 +41,23 @@ export default async function ServicePage({ params }: Props) {
   if (!service) notFound();
 
   const relatedServices = SERVICES.filter((s) => s.slug !== slug).slice(0, 4);
+  const heroImage = SERVICE_HERO_IMAGES[slug];
 
   return (
     <>
       {/* Breadcrumb + Hero */}
-      <section className="bg-[#2a4861] text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative bg-[#2a4861] text-white py-16 px-4">
+        {heroImage && (
+          <Image
+            src={heroImage}
+            alt={service.title}
+            fill
+            className="object-cover object-center"
+            priority
+          />
+        )}
+        {heroImage && <div className="absolute inset-0 bg-[#2a4861]/75" />}
+        <div className="relative max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-[#5d7b94] text-sm mb-6">
             <Link href="/" className="hover:text-white transition-colors">
               Home

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { SERVICES } from "@/lib/data";
 import CTASection from "@/components/CTASection";
 
@@ -7,6 +8,10 @@ export const metadata: Metadata = {
   title: "Electrical Services Central Victoria",
   description:
     "Full range of electrical services in Central Victoria — new installations, lighting, switchboards, data cabling, fire detection, generator connections, and more. A-grade licensed. Call 0413 091 102.",
+};
+
+const CATEGORY_IMAGES: Record<string, string> = {
+  "Lighting & Automation": "/images/gallery/officePendants.webp",
 };
 
 const SERVICE_CATEGORIES = [
@@ -58,14 +63,14 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section
-        className="relative text-white py-16 px-4"
-        style={{
-          backgroundImage: "url('/images/gallery/commercial-lighting.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <section className="relative text-white py-16 px-4">
+        <Image
+          src="/images/gallery/commercial-lighting.webp"
+          alt="Commercial electrical services"
+          fill
+          className="object-cover object-center"
+          priority
+        />
         <div className="absolute inset-0 bg-[#2a4861]/80" />
         <div className="relative max-w-4xl mx-auto">
           <p className="text-[#f5b840] font-display font-bold text-sm tracking-widest uppercase mb-3">
@@ -89,11 +94,29 @@ export default function ServicesPage() {
             const services = cat.slugs
               .map((slug) => SERVICES.find((s) => s.slug === slug))
               .filter(Boolean);
+            const catImage = CATEGORY_IMAGES[cat.label];
             return (
               <div key={cat.label}>
-                <h2 className="font-display font-bold text-2xl text-[#2a4861] mb-6 pb-3 border-b-2 border-[#f5b840] inline-block">
-                  {cat.label}
-                </h2>
+                {catImage ? (
+                  <div className="relative rounded-xl overflow-hidden mb-6 h-32">
+                    <Image
+                      src={catImage}
+                      alt={cat.label}
+                      fill
+                      className="object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-[#2a4861]/70" />
+                    <div className="relative h-full flex items-center px-6">
+                      <h2 className="font-display font-bold text-2xl text-white">
+                        {cat.label}
+                      </h2>
+                    </div>
+                  </div>
+                ) : (
+                  <h2 className="font-display font-bold text-2xl text-[#2a4861] mb-6 pb-3 border-b-2 border-[#f5b840] inline-block">
+                    {cat.label}
+                  </h2>
+                )}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {services.map((service) => (
                     <Link
