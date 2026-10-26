@@ -12,7 +12,16 @@ export const metadata: Metadata = {
     "Chuck E Electrical services Seymour, Euroa, Broadford, Kilmore, Nagambie, Wallan, Heathcote and all surrounding towns in Central Victoria. Call 0413 091 102.",
 };
 
+const HIDDEN_FROM_LISTING = new Set([
+  "hilldene",
+  "glenaroua",
+  "highlands",
+  "mangalore",
+  "whiteheads-creek",
+]);
+
 export default function LocationsPage() {
+  const visibleTowns = TOWNS.filter((t) => !HIDDEN_FROM_LISTING.has(t.slug));
   return (
     <>
       <section className="bg-[#2a4861] text-white py-16 px-4">
@@ -34,7 +43,7 @@ export default function LocationsPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {TOWNS.map((town) => {
+            {visibleTowns.map((town) => {
               const heroPath = `/images/locations/hero-${town.slug}.webp`;
               const hasHero = existsSync(path.join(process.cwd(), "public", heroPath));
               return (
