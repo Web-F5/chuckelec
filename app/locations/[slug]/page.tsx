@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { existsSync } from "fs";
 import path from "path";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { TOWNS, SERVICES, CONTACT } from "@/lib/data";
 import CTASection from "@/components/CTASection";
@@ -57,6 +58,11 @@ export default async function TownPage({ params }: Props) {
     SERVICES.find((svc) => svc.slug === s)
   ).filter(Boolean);
 
+  const heroImagePath = `/images/locations/hero-${slug}.webp`;
+  const hasHeroImage = existsSync(
+    path.join(process.cwd(), "public", heroImagePath)
+  );
+
   const nearbyTowns = TOWNS.filter((t) => t.slug !== slug).slice(0, 6);
 
   return (
@@ -107,8 +113,18 @@ export default async function TownPage({ params }: Props) {
       />
 
       {/* Hero */}
-      <section className="bg-[#2a4861] text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section className="relative text-white py-16 px-4 bg-[#2a4861]">
+        {hasHeroImage && (
+          <Image
+            src={heroImagePath}
+            alt={`${town.name}, Victoria`}
+            fill
+            className="object-cover object-center"
+            priority
+          />
+        )}
+        <div className={`absolute inset-0 ${hasHeroImage ? "bg-[#2a4861]/75" : "bg-[#2a4861]"}`} />
+        <div className="relative max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-[#5d7b94] text-sm mb-6">
             <Link href="/" className="hover:text-white transition-colors">
               Home

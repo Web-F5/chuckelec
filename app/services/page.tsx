@@ -58,8 +58,16 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#2a4861] text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section
+        className="relative text-white py-16 px-4"
+        style={{
+          backgroundImage: "url('/images/gallery/commercial-lighting.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-[#2a4861]/80" />
+        <div className="relative max-w-4xl mx-auto">
           <p className="text-[#f5b840] font-display font-bold text-sm tracking-widest uppercase mb-3">
             What We Offer
           </p>
