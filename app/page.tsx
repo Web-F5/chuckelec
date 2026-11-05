@@ -42,6 +42,16 @@ const SERVICE_ICONS: Record<string, React.ReactNode> = {
       <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
     </svg>
   ),
+  "solar-panel-installation": (
+    <svg className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/>
+    </svg>
+  ),
+  "battery-storage-installation": (
+    <svg className="w-5 h-5 text-[#2a4861] group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4zm-1.67 9h-2v2h-2v-2H8v-2h2V9h2v2h2v2z"/>
+    </svg>
+  ),
 };
 
 const DEFAULT_SERVICE_ICON = (
@@ -57,6 +67,8 @@ const FEATURED_SERVICES = [
   "fire-detection-installation",
   "home-automation-installations",
   "data-cabling",
+  "solar-panel-installation",
+  "battery-storage-installation",
 ];
 
 export default function HomePage() {

@@ -454,6 +454,61 @@ For businesses, unplanned electrical outages are expensive. A structured mainten
     metaDescription:
       "Scheduled preventative electrical maintenance in Central Victoria. Thermographic scanning, switchboard testing & RCD testing. Commercial & industrial. Call 0413 091 102.",
   },
+  {
+    slug: "solar-panel-installation",
+    title: "Solar Panel Installation",
+    shortTitle: "Solar Panels",
+    icon: "",
+    tagline: "Harness the sun, cut your bills",
+    summary:
+      "Professional solar panel installation for homes and businesses across Central Victoria — designed, installed, and certified by licensed electricians.",
+    description: `Solar energy is one of the smartest investments you can make for your home or business. With Central Victoria's strong sunlight hours and rising energy costs, a well-designed solar system can dramatically reduce your electricity bills and your carbon footprint.
+
+Chuck E Electrical designs and installs solar panel systems for residential, commercial, and rural properties. Our A-grade licensed electricians handle the complete installation — from system design and panel mounting through to inverter wiring, grid connection, and all required electrical certifications.
+
+We work with quality solar panels and inverters to ensure your system performs reliably for decades. Every installation is completed to Australian Standards and includes a Certificate of Electrical Safety. We also liaise with your network distributor for grid connection approval, making the process straightforward from start to finish.
+
+Whether you're looking for a modest rooftop system to offset household bills or a larger commercial installation to reduce business operating costs, we'll size and design the right system for your needs and budget.`,
+    benefits: [
+      "A-grade licensed solar electricians",
+      "Full system design and installation",
+      "Residential, commercial & rural",
+      "Grid connection and certification",
+      "Quality panels and inverters",
+      "Certificate of Electrical Safety issued",
+    ],
+    metaTitle: "Solar Panel Installation Central Victoria | Chuck E Electrical",
+    metaDescription:
+      "Professional solar panel installation for homes and businesses in Central Victoria. A-grade licensed electricians. Grid connection, full certification. Call 0413 091 102.",
+  },
+  {
+    slug: "battery-storage-installation",
+    title: "Battery Storage Installation",
+    shortTitle: "Battery Storage",
+    icon: "",
+    tagline: "Store your energy, power your future",
+    summary:
+      "Battery storage systems installed by licensed electricians — maximise your solar investment and keep the power on when the grid goes down.",
+    description: `A battery storage system takes your solar investment to the next level. Instead of exporting surplus solar energy back to the grid for a low feed-in tariff, a battery stores that energy for use when the sun isn't shining — in the evening, on cloudy days, or during a grid outage.
+
+Chuck E Electrical installs battery storage systems including inverter-integrated batteries for residential and commercial properties throughout Central Victoria. We work with leading battery brands and ensure every installation meets Australian Standards and manufacturer requirements.
+
+Our licensed electricians handle the complete electrical installation — battery mounting, DC and AC wiring, inverter integration, monitoring system setup, and all required safety certifications. We also advise on the right battery capacity for your usage patterns, ensuring you get maximum value from your investment.
+
+For properties already running solar, adding battery storage is often a straightforward upgrade. For new installations, we can design a combined solar and battery system from the ground up. Either way, you'll have clean, stored energy available when you need it most.`,
+    benefits: [
+      "A-grade licensed battery installers",
+      "Leading battery brands and inverters",
+      "Residential and commercial",
+      "Solar integration and new installs",
+      "Monitoring system setup",
+      "Full electrical certification",
+    ],
+    metaTitle:
+      "Battery Storage Installation Central Victoria | Chuck E Electrical",
+    metaDescription:
+      "Battery storage installation for homes and businesses in Central Victoria. Solar integration, inverter wiring, full certification. A-grade licensed. Call 0413 091 102.",
+  },
 ];
 
 export const TOWNS = [

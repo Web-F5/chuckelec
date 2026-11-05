@@ -7,6 +7,8 @@ import CTASection from "@/components/CTASection";
 
 const SERVICE_HERO_IMAGES: Record<string, string> = {
   "lighting-installations": "/images/gallery/officePendants.webp",
+  "solar-panel-installation": "/images/solar-and batteries/solar-and batteries-02.webp",
+  "battery-storage-installation": "/images/solar-and batteries/solar-and batteries-01.webp",
 };
 
 interface Props {

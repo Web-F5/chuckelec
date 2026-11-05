@@ -15,6 +15,7 @@ const CATEGORY_IMAGES: Record<string, string> = {
   "Lighting & Automation": "/images/gallery/sports-field-lighting.webp",
   "Power & Switchboards": "/images/gallery/shed-powerpoint.webp",
   "Cabling & Communications": "/images/gallery/underground-cabling.webp",
+  "Solar & Batteries": "/images/solar-and batteries/solar-and batteries-02.webp",
 };
 
 const SERVICE_CATEGORIES = [
@@ -58,6 +59,13 @@ const SERVICE_CATEGORIES = [
     slugs: [
       "fire-detection-installation",
       "preventative-electrical-maintenance",
+    ],
+  },
+  {
+    label: "Solar & Batteries",
+    slugs: [
+      "solar-panel-installation",
+      "battery-storage-installation",
     ],
   },
 ];
