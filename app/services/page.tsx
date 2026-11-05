@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const CATEGORY_IMAGES: Record<string, string> = {
   "Installations & Repairs": "/images/gallery/shed-lighting.webp",
-  "Lighting & Automation": "/images/gallery/sports-field-lighting.webp",
+  "Lighting & Automation": "/images/lighting/lighting-frontdesk.webp",
   "Power & Switchboards": "/images/gallery/shed-powerpoint.webp",
   "Cabling & Communications": "/images/gallery/underground-cabling.webp",
   "Solar & Batteries": "/images/solar-and batteries/solar-and batteries-03.webp",
