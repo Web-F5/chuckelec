@@ -15,7 +15,7 @@ const CATEGORY_IMAGES: Record<string, string> = {
   "Lighting & Automation": "/images/lighting/lighting-frontdesk.webp",
   "Power & Switchboards": "/images/gallery/shed-powerpoint.webp",
   "Cabling & Communications": "/images/gallery/underground-cabling.webp",
-  "Solar & Batteries": "/images/solar-and batteries/solar-and batteries-03.webp",
+  "Solar & Batteries": "/images/solar-and batteries/solar-and batteries-03.jpg",
 };
 
 const SERVICE_CATEGORIES = [
