@@ -523,6 +523,32 @@ export const TOWNS = [
     character:
       "Seymour is a major service town on the Hume Highway with a strong agricultural and defence community. Properties range from older post-war homes through to modern rural residential developments on the town's outskirts.",
     driveTime: "Home base",
+    extraParagraph:
+      "Seymour has undergone significant development in recent years, with the railway station precinct revitalised and growth along the Hume Highway corridor. The town's mix of post-war homes, rural lifestyle blocks, and industrial properties means we handle everything from domestic safety switch installations to three-phase industrial wiring on a weekly basis. Our workshop and equipment are based here in Seymour, so there's no call-out fee for most standard jobs within the township.",
+    serviceIntro:
+      "As your local Seymour electrician, we're minutes away for everything from urgent fault finding to planned renovation wiring. We handle homes on Emily Street, farms on the outskirts, and commercial premises throughout the town centre.",
+    faqs: [
+      {
+        q: "Do you charge a call-out fee for Seymour jobs?",
+        a: "Because we're based in Seymour, there's generally no call-out fee for standard residential and commercial work within the township. We'll confirm pricing when you call.",
+      },
+      {
+        q: "Can you upgrade an older Seymour home to have safety switches?",
+        a: "Yes. Many older Seymour homes still have fuse wire and no RCD protection. We can upgrade your switchboard to include safety switches on all circuits, bringing your home into line with current Victorian safety standards.",
+      },
+      {
+        q: "Do you work on commercial and industrial properties in Seymour?",
+        a: "We regularly work on commercial and light industrial properties throughout Seymour, including switchboard upgrades, three-phase power installations, and LED lighting fitouts for warehouses and workshops.",
+      },
+      {
+        q: "My power keeps tripping — can you find the fault?",
+        a: "Tripping circuits are one of the most common calls we receive. We carry fault-finding equipment and can usually identify and fix the cause in a single visit.",
+      },
+      {
+        q: "Can you wire a new shed or garage on my Seymour property?",
+        a: "Absolutely. Shed and garage wiring — including power points, lighting, and switchboard connections — is a large part of our day-to-day work in and around Seymour.",
+      },
+    ],
   },
   {
     slug: "euroa",
@@ -535,6 +561,32 @@ export const TOWNS = [
     character:
       "Euroa sits at the gateway to the Strathbogie Ranges with a strong pastoral tradition. Many properties here have older electrical infrastructure that benefits from careful assessment and modernisation.",
     driveTime: "Approximately 30 minutes from Seymour",
+    extraParagraph:
+      "The Strathbogie Ranges backdrop gives Euroa a distinctive character that attracts both long-established farming families and tree-changers seeking a quieter lifestyle. Many properties around Euroa have three-phase power for irrigation or workshop use, and older homesteads often benefit from a thorough electrical inspection before renovation or sale. We're familiar with the region's power infrastructure and can advise on the best approach for rural property upgrades.",
+    serviceIntro:
+      "In Euroa we work on everything from heritage commercial buildings in the main street to rural homesteads in the Strathbogie foothills. Our experience with older wiring systems means we can safely assess and modernise properties of any age.",
+    faqs: [
+      {
+        q: "How far is Chuck E Electrical from Euroa?",
+        a: "We're based in Seymour, approximately 30 minutes from Euroa. We regularly schedule work in the Euroa area and try to combine jobs on the same day to keep travel costs low.",
+      },
+      {
+        q: "Can you service old farmhouses near Euroa with outdated wiring?",
+        a: "Yes. Older rural properties often have wiring that predates current Australian Standards. We can inspect the existing installation, identify hazards, and carry out upgrades in stages if budget is a consideration.",
+      },
+      {
+        q: "Do you install three-phase power for irrigation systems near Euroa?",
+        a: "Three-phase power for irrigation, pumps, and workshop equipment is a common request from farming clients in the Euroa district. We handle the full installation from the network connection point to the final equipment connection.",
+      },
+      {
+        q: "Can you help with a solar panel system for a Euroa property?",
+        a: "Yes. We install solar panels and battery storage systems throughout the Euroa region. We can assess your property's orientation and power usage to recommend the most effective system size.",
+      },
+      {
+        q: "Do you issue a Certificate of Electrical Safety for work in Euroa?",
+        a: "Every electrical job we complete in Victoria — including all work in the Euroa area — requires a Certificate of Electrical Safety, which we provide as standard. This certificate is important for insurance and property sale purposes.",
+      },
+    ],
   },
   {
     slug: "avenel",
@@ -547,6 +599,32 @@ export const TOWNS = [
     character:
       "A small but proud community with deep rural roots. Agricultural electrical needs — from pump controls to machinery shed wiring — are a common request from Avenel clients.",
     driveTime: "Approximately 20 minutes from Seymour",
+    extraParagraph:
+      "Avenel's location between Seymour and Nagambie makes it an easy service call for our team, and we have an established client base throughout the district. The town's connection to Ned Kelly history draws visitors, while the working farms around it keep our rural electrical services busy year-round. Hughes Creek and the surrounding farming land mean many properties require pump controls, irrigation switching, and reliable rural power distribution.",
+    serviceIntro:
+      "In Avenel we work closely with farming families and rural property owners on everything from machinery shed wiring to domestic rewiring of historic homesteads. The agricultural heart of the community means pump and irrigation electrical work is always in demand.",
+    faqs: [
+      {
+        q: "Do you service farms and rural properties around Avenel?",
+        a: "Yes. Agricultural electrical work is a core part of our business in the Avenel district, including pump controls, irrigation switching gear, three-phase power for machinery, and shed wiring.",
+      },
+      {
+        q: "Can you install security lighting on a rural Avenel property?",
+        a: "We install security and sensor lighting on rural properties throughout the area. Good perimeter lighting deters intruders and improves safety around yards, sheds, and livestock areas.",
+      },
+      {
+        q: "My bore pump has stopped working — can you help?",
+        a: "Bore pump faults are a common emergency call we receive from rural clients. We carry testing equipment and common parts to diagnose and often repair pump electrical faults on the first visit.",
+      },
+      {
+        q: "Can you wire a new machinery shed near Avenel?",
+        a: "Machinery shed wiring — including three-phase outlets, fluorescent and LED lighting, and switchboard connections — is work we do regularly throughout the Avenel and Nagambie corridor.",
+      },
+      {
+        q: "What notice do you need to schedule work in Avenel?",
+        a: "For planned work in Avenel we typically need 1–2 weeks' notice, though we can often respond faster for urgent faults or emergencies. Call us on 0413 091 102 to discuss your timeline.",
+      },
+    ],
   },
   {
     slug: "wallan",
@@ -559,6 +637,32 @@ export const TOWNS = [
     character:
       "A rapidly developing community attracting Melbourne commuters and young families. New construction electrical work, switchboard upgrades, and smart home installations are popular requests from Wallan clients.",
     driveTime: "Approximately 40 minutes from Seymour",
+    extraParagraph:
+      "Wallan's rapid residential growth means there is consistent demand for new installation work, with estates expanding the town's footprint year by year. We work alongside builders and owner-builders on new homes, handling all electrical rough-in and final fix stages. As the town grows, upgrading older properties near the town centre to meet modern safety standards — including safety switches and surge protection — is also a popular request.",
+    serviceIntro:
+      "Wallan's building boom keeps us busy with new construction electrical work alongside established home upgrades. Whether you're in a brand-new estate or an older home near the town centre, we bring the same licensed care to every job.",
+    faqs: [
+      {
+        q: "Do you work with builders on new homes in Wallan's residential estates?",
+        a: "Yes. We regularly work with builders and owner-builders on new residential construction in Wallan's growing estates, handling everything from rough-in wiring to final inspection and connection.",
+      },
+      {
+        q: "Can you install EV charging points at a Wallan home?",
+        a: "Electric vehicle charger installation is a growing request in Wallan. We can install a dedicated EV charging circuit and outlet to suit your vehicle's requirements, including assessment of your switchboard capacity.",
+      },
+      {
+        q: "My new Wallan home's switchboard doesn't have enough circuits — can you upgrade it?",
+        a: "Switchboard upgrades are very common in Wallan's newer homes as owners add air conditioning, workshops, and EV chargers. We assess your current and future load requirements and install a correctly sized switchboard.",
+      },
+      {
+        q: "Do you install home automation systems in Wallan?",
+        a: "Yes. Smart home and home automation installations are popular in Wallan's newer properties. We install smart lighting, automated blinds, security systems, and centralised control systems.",
+      },
+      {
+        q: "Can you install solar panels on a Wallan home?",
+        a: "Wallan's rooftops are well-suited to solar, and many newer homes are designed with solar in mind. We install solar panel systems and battery storage to reduce your grid power costs.",
+      },
+    ],
   },
   {
     slug: "kilmore",
@@ -571,6 +675,32 @@ export const TOWNS = [
     character:
       "A historic and growing town with a diverse property mix. Heritage buildings often require careful electrical work to preserve character while meeting modern standards. Growing residential areas need new installation and switchboard services.",
     driveTime: "Approximately 45 minutes from Seymour",
+    extraParagraph:
+      "Kilmore's status as one of Victoria's oldest inland towns means many properties carry significant heritage character, from the bluestone buildings along Sydney Street to century-old homesteads on surrounding farms. Electrical work in heritage buildings requires careful planning to avoid damage to original fabric while meeting modern safety requirements. We also service Kilmore International School and other larger commercial clients in the district.",
+    serviceIntro:
+      "In Kilmore we have experience across the full property spectrum — from sensitive heritage building electrical work to modern residential estates and rural properties in the surrounding Mitchell Shire. Our careful approach protects heritage character while delivering modern safety outcomes.",
+    faqs: [
+      {
+        q: "Can you do electrical work in heritage buildings in Kilmore?",
+        a: "Yes. Heritage buildings require extra care to route wiring without damaging original finishes. We use surface-mount conduit systems, minimise penetrations, and work with heritage advisors where required.",
+      },
+      {
+        q: "Do you service Kilmore's newer residential estates?",
+        a: "Kilmore's residential growth has brought several newer estates. We work on new construction, switchboard upgrades, solar installations, and home automation for properties throughout these developments.",
+      },
+      {
+        q: "Can you install a safety switch on an older Kilmore home?",
+        a: "Many older Kilmore properties lack RCD protection. We can upgrade your switchboard to include safety switches on all circuits, which is now required by Victorian law when making changes to your electrical installation.",
+      },
+      {
+        q: "Do you work on commercial properties in Kilmore?",
+        a: "Yes. We service commercial and retail properties in Kilmore's main street and industrial area, including fitouts, switchboard upgrades, emergency lighting, and LED conversions.",
+      },
+      {
+        q: "Can you connect a generator to my Kilmore property?",
+        a: "Generator connections are popular in Kilmore where rural properties and hobby farms may experience power outages. We install proper transfer switches that safely isolate you from the grid when the generator is running.",
+      },
+    ],
   },
   {
     slug: "pyalong",
@@ -583,6 +713,32 @@ export const TOWNS = [
     character:
       "A tight-knit rural community where agricultural electrical work is central — pump controls, irrigation systems, machinery shed wiring, and rural property power distribution.",
     driveTime: "Approximately 50 minutes from Seymour",
+    extraParagraph:
+      "Pyalong's proximity to the Mount Macedon Ranges means properties here often face the dual challenge of maintaining reliable power during storm events and managing the electrical needs of hobby farms and small rural holdings. The community hall and local businesses rely on well-maintained electrical systems, and several rural properties in the district have recently transitioned to solar power with battery backup to increase energy independence. We're familiar with the rural power infrastructure in the Pyalong and Upper Campaspe area.",
+    serviceIntro:
+      "In Pyalong and the surrounding district, agricultural electrical reliability is paramount. Pump failures and storm-related faults are our most common urgent calls from this area, and we respond quickly.",
+    faqs: [
+      {
+        q: "Do you service remote rural properties around Pyalong?",
+        a: "Yes. We service properties throughout the Pyalong district, including more remote farms that may be a significant distance from the main road. We factor travel time into our scheduling and pricing upfront.",
+      },
+      {
+        q: "Can you install a solar and battery system at a Pyalong farm?",
+        a: "Solar and battery storage is an excellent choice for Pyalong properties, reducing reliance on the grid and providing backup power during outages. We design and install systems sized to match your property's energy needs.",
+      },
+      {
+        q: "My irrigation pump won't start — can you come out to Pyalong?",
+        a: "Pump faults are urgent on farming properties, and we try to attend to them promptly. We carry testing equipment and common parts for single and three-phase pump motors.",
+      },
+      {
+        q: "Can you wire a new dairy or machinery shed near Pyalong?",
+        a: "New shed wiring — including three-phase power, fluorescent and LED lighting, power points, and water pump circuits — is a common job in the Pyalong agricultural district.",
+      },
+      {
+        q: "Do you install RCD protection on rural Pyalong properties?",
+        a: "Yes. RCD (safety switch) protection is mandatory on new circuits and strongly recommended across all existing circuits. Many older rural properties in the Pyalong area lack this protection and are at higher risk of electrical fire.",
+      },
+    ],
   },
   {
     slug: "wandong",
@@ -595,6 +751,32 @@ export const TOWNS = [
     character:
       "A popular location for lifestyle properties and hobby farms. Power distribution across acreage blocks, solar integration, and generator connections are commonly requested services from Wandong clients.",
     driveTime: "Approximately 50 minutes from Seymour",
+    extraParagraph:
+      "Wandong and Heathcote Junction sit at the crossroads of the Great Dividing Range foothills and the growing Melbourne commuter belt, creating a unique mix of hobby farms, residential homes, and rural lifestyle blocks. The annual Wandong Country Music Festival draws visitors from across the region, and the town's commercial properties have grown to support the expanding community. For lifestyle block owners, we commonly assist with new shed wiring, solar installations, and generator connections for storm-season peace of mind.",
+    serviceIntro:
+      "Wandong's lifestyle block community keeps our rural and residential electrical services busy year-round. From solar installations on north-facing rooftops to generator connections for storm season, we understand what this community needs.",
+    faqs: [
+      {
+        q: "Do you service hobby farm properties in Wandong?",
+        a: "Absolutely. Hobby farm and lifestyle block electrical work — sheds, pumps, fencing energisers, and solar — forms a large part of our work in the Wandong area.",
+      },
+      {
+        q: "Can you install a whole-of-home solar and battery system in Wandong?",
+        a: "Yes. Wandong's acreage properties often have excellent solar exposure. We design and install systems to suit your household's energy usage and budget, including battery storage for greater independence.",
+      },
+      {
+        q: "What is the best way to protect a Wandong property during storm season?",
+        a: "Generator connections with proper transfer switches provide the best protection against extended outages. We also install surge protection devices that protect your appliances from voltage spikes during storms.",
+      },
+      {
+        q: "Can you wire a new outbuilding or home office at my Wandong property?",
+        a: "Underground cabling and outbuilding wiring is a popular request in Wandong. We install sub-boards, lighting, power points, and data cabling for home offices, studios, and workshops.",
+      },
+      {
+        q: "Do you do same-day call-outs to Wandong?",
+        a: "We're approximately 50 minutes from Seymour, so same-day call-outs are possible for genuine emergencies. For non-urgent work, we schedule Wandong visits regularly and will find a time that suits you.",
+      },
+    ],
   },
   {
     slug: "hilldene",
@@ -619,6 +801,32 @@ export const TOWNS = [
     character:
       "A quiet rural locality where agricultural electrical needs dominate — pump controls, irrigation switching, and rural property power distribution are common requirements.",
     driveTime: "Approximately 35 minutes from Seymour",
+    extraParagraph:
+      "Locksley's setting in the lower Strathbogie Shire puts it at the heart of some of the region's most productive grazing land. The Goulburn Valley's irrigation network passes close to the district, and many properties rely on electrically operated pumps and gates that need periodic maintenance and upgrading. We know several of the long-established farming families in Locksley and have worked on their properties over many years, providing continuity of service that makes problem-solving much easier.",
+    serviceIntro:
+      "In Locksley, farming properties dominate our workload. Irrigation electrical systems, pump controls, and homestead upgrades are the most common jobs, and we plan our Locksley visits to cover multiple clients efficiently.",
+    faqs: [
+      {
+        q: "How often do you visit Locksley for scheduled work?",
+        a: "We schedule regular visits to the Locksley and Nagambie corridor and can usually fit planned work into the next available run. Emergency faults are attended to as quickly as possible.",
+      },
+      {
+        q: "Can you service an electric fence energiser installation near Locksley?",
+        a: "While fence energisers themselves are not licensed electrical work, the connection point and power supply to energisers on larger properties often needs a licensed electrician. We can install and certify those connection points.",
+      },
+      {
+        q: "Do you provide three-phase power upgrades for rural properties near Locksley?",
+        a: "Three-phase power is often needed for larger pumps, grain-handling equipment, and workshop machinery. We handle the full installation from the network supply point through to equipment connections.",
+      },
+      {
+        q: "My homestead in the Locksley area needs rewiring — where do I start?",
+        a: "Start with a free assessment. We'll inspect the current installation, identify any safety concerns, and provide a staged quote that allows you to prioritise the most critical work first.",
+      },
+      {
+        q: "Can you install solar panels on a Locksley grazing property?",
+        a: "Solar is well-suited to the Locksley district's open landscapes and high solar exposure. We install grid-connected and off-grid solar systems, including battery storage for properties that want energy independence.",
+      },
+    ],
   },
   {
     slug: "longwood",
@@ -631,6 +839,32 @@ export const TOWNS = [
     character:
       "A genuinely rural community with a strong pastoral heritage. Rural electrical work — from homestead upgrades to farm infrastructure — is the mainstay of our work here.",
     driveTime: "Approximately 25 minutes from Seymour",
+    extraParagraph:
+      "Longwood lies on the gentler slopes leading toward the Strathbogie Ranges, a landscape of merino sheep stations and hobby farms that has changed little in character over generations. The community's strong pastoral identity means most electrical work here relates to farm infrastructure, though an increasing number of tree-changers are renovating older homes in the area. We've worked in Longwood for many years and have a good understanding of the properties and their electrical histories.",
+    serviceIntro:
+      "In Longwood, pastoral properties and their electrical infrastructure make up most of our work. We balance the practical demands of farming operations with the comfort and safety upgrades that homesteads increasingly need.",
+    faqs: [
+      {
+        q: "Can you upgrade the wiring in an older Longwood homestead?",
+        a: "Yes. Older homesteads in the Longwood area often have wiring from the 1960s or 70s that lacks RCD protection and uses outdated connections. We can carry out a full or staged rewire to bring the property up to current standards.",
+      },
+      {
+        q: "Do you install solar systems in the Longwood area?",
+        a: "Longwood's sunny position makes it ideal for solar. We install solar panel systems and battery storage, and can design an off-grid system for more remote properties not connected to the grid.",
+      },
+      {
+        q: "Can you help with electrical compliance before selling a Longwood property?",
+        a: "Yes. Before selling, Victoria requires a current Certificate of Electrical Safety. We can inspect the installation, carry out any necessary remediation work, and issue the certificate.",
+      },
+      {
+        q: "Do you wire new sheds and outbuildings near Longwood?",
+        a: "Shed and outbuilding wiring is regular work in the Longwood district. We install lighting, power points, three-phase outlets, and switchboards tailored to your farm's operational needs.",
+      },
+      {
+        q: "How do I report an electrical emergency near Longwood?",
+        a: "Call us directly on 0413 091 102. For after-hours emergencies we can arrange call-out attendance. If the fault involves the network (poles and wires) rather than your internal wiring, contact AusNet on 13 17 99.",
+      },
+    ],
   },
   {
     slug: "nagambie",
@@ -643,6 +877,32 @@ export const TOWNS = [
     character:
       "A thriving tourism and agricultural centre with a significant holiday home and short-term rental market. Commercial kitchen wiring, hospitality lighting, and holiday property upgrades are common requests from Nagambie clients.",
     driveTime: "Approximately 30 minutes from Seymour",
+    extraParagraph:
+      "Lake Nagambie is one of Central Victoria's premier tourism destinations, and the lakeside properties and holiday homes around the lake are a significant part of our client base. The Tahbilk and Mitchelton wineries are major employers and generate substantial commercial electrical work, from winery production facilities through to restaurant and cellar door lighting. Nagambie's short-term rental market also creates demand for electrical safety inspections and upgrades before properties are listed on booking platforms.",
+    serviceIntro:
+      "In Nagambie we work across tourism accommodation, winery facilities, holiday homes, and permanent residences. The commercial hospitality sector has specific electrical needs we're experienced in meeting, from kitchen power to atmospheric cellar door lighting.",
+    faqs: [
+      {
+        q: "Do you work on winery and cellar door electrical installations near Nagambie?",
+        a: "Yes. We have experience with winery electrical installations including production equipment power, refrigeration circuits, cellar door lighting and fitout, and hospitality kitchen wiring for restaurants.",
+      },
+      {
+        q: "Can you do an electrical safety check on a Nagambie holiday rental?",
+        a: "Electrical safety checks for short-term rental properties are strongly recommended and increasingly required by insurance policies. We carry out full inspections and issue a Certificate of Electrical Safety.",
+      },
+      {
+        q: "Do you service lake-side properties and boat sheds near Nagambie?",
+        a: "Yes. Waterfront properties have specific electrical requirements, particularly around earthing near water. We follow the special requirements for electrical installations near swimming pools, lakes, and waterways.",
+      },
+      {
+        q: "Can you install outdoor and landscape lighting around a Nagambie property?",
+        a: "Landscape and outdoor lighting is popular at Nagambie's lakeside properties. We install low-voltage garden lighting, feature lighting, and outdoor power circuits that enhance the amenity of your property.",
+      },
+      {
+        q: "What is the turnaround time for a quote on a Nagambie commercial project?",
+        a: "For commercial projects in Nagambie, we can usually provide a written quote within 3–5 business days of an initial site inspection. Call us to arrange a visit.",
+      },
+    ],
   },
   {
     slug: "tooborac",
@@ -655,6 +915,32 @@ export const TOWNS = [
     character:
       "A tiny community with genuine rural character. Agricultural and rural residential electrical work is the primary service required here.",
     driveTime: "Approximately 45 minutes from Seymour",
+    extraParagraph:
+      "The Tooborac Hotel is one of the oldest licensed premises in central Victoria, and its electrical systems — like those of many heritage buildings in the district — require specialist care to maintain safety while preserving the building's historic character. The surrounding grazing country is sparsely populated, but the farming families who do call Tooborac home rely on us for practical, no-fuss rural electrical service. We're one of the few electrical contractors prepared to travel this far off the main highway for smaller rural jobs.",
+    serviceIntro:
+      "In Tooborac and the surrounding grazing district, practical rural electrical work is our focus. We service farm infrastructure, homesteads, and the township's commercial and community buildings with equal care.",
+    faqs: [
+      {
+        q: "Do you service the Tooborac area even though it's fairly remote?",
+        a: "Yes. We regularly travel to Tooborac for both planned and emergency work. Being prepared to service rural and remote properties is part of what sets us apart from contractors who only cover major towns.",
+      },
+      {
+        q: "Can you install solar power at a remote Tooborac property?",
+        a: "Solar and battery storage is particularly beneficial for remote properties where grid power is expensive or unreliable. We design and install off-grid and hybrid systems suited to the energy needs of rural properties.",
+      },
+      {
+        q: "My Tooborac property's power keeps going out during storms — what can you do?",
+        a: "We can install whole-of-home surge protection, a transfer switch for a generator, and check the condition of your property's service line from the network connection point to your switchboard.",
+      },
+      {
+        q: "Do you wire new farm outbuildings near Tooborac?",
+        a: "Yes. Shed wiring, including power points, lighting, and three-phase outlets for farm equipment, is work we carry out throughout the Tooborac district.",
+      },
+      {
+        q: "How long does it take to get an electrician to Tooborac?",
+        a: "Tooborac is approximately 45 minutes from our Seymour base. For urgent matters we aim to attend the same day if possible. For planned work, we schedule visits to the area and can usually accommodate your timing with reasonable notice.",
+      },
+    ],
   },
   {
     slug: "broadford",
@@ -667,6 +953,32 @@ export const TOWNS = [
     character:
       "A growing semi-rural town attracting lifestyle block purchasers and commuter families. New residential installations, switchboard upgrades, and generator connections for power backup are popular services here.",
     driveTime: "Approximately 25 minutes from Seymour",
+    extraParagraph:
+      "Broadford's position on the Hume Freeway makes it one of the most accessible towns in our service area, and its growing population of commuter families brings a steady stream of residential electrical work. The town's expansion into new residential estates has created significant demand for new construction wiring, while the established older homes near the town centre frequently benefit from switchboard upgrades and LED lighting conversions. Cathedral Range to the east provides a stunning backdrop but also brings elevated storm risk, making generator connections and surge protection popular requests.",
+    serviceIntro:
+      "In Broadford we work across new residential construction in the growing estates and upgrades to established homes near the town centre. Fast access via the Hume Freeway means we can respond quickly to Broadford service calls.",
+    faqs: [
+      {
+        q: "Do you work on new residential construction in Broadford's estates?",
+        a: "Yes. We work with builders and owner-builders on new residential construction in Broadford, handling all stages from rough-in to final inspection.",
+      },
+      {
+        q: "Can you upgrade my older Broadford home's switchboard?",
+        a: "Switchboard upgrades are among the most common jobs we do in Broadford's established suburb areas. We upgrade from older fuse-based boards to modern circuit breaker and RCD-protected systems.",
+      },
+      {
+        q: "Do you install solar power systems in Broadford?",
+        a: "Yes. Broadford's residential properties are well-suited to rooftop solar. We install panel systems and battery storage to reduce your grid power bills.",
+      },
+      {
+        q: "Can you install a generator connection at my Broadford property?",
+        a: "Generator connections with automatic or manual transfer switches are popular in Broadford, particularly for properties close to the Cathedral Range where storm-related outages are more common.",
+      },
+      {
+        q: "How quickly can you get to Broadford for an electrical emergency?",
+        a: "Broadford is about 25 minutes from our Seymour base. We can usually attend emergencies in Broadford within the hour during business hours, and we have after-hours call-out available.",
+      },
+    ],
   },
   {
     slug: "glenaroua",
@@ -691,6 +1003,32 @@ export const TOWNS = [
     character:
       "A vibrant wine and tourism community with significant commercial electrical needs from wineries and tourism businesses, alongside residential and rural property electrical services.",
     driveTime: "Approximately 55 minutes from Seymour",
+    extraParagraph:
+      "The Cambrian greenstone ridge that makes Heathcote's wine so distinctive also runs beneath the town itself, and properties built on this volcanic rock can present interesting challenges for underground cabling and earthing. The Heathcote wine region's growth has brought increasing commercial electrical demand from new cellar doors, tourism accommodation, and farm-to-table restaurants. We've worked on numerous wineries and tourism businesses in the region and understand the specific power requirements of food and beverage production.",
+    serviceIntro:
+      "In Heathcote we're as comfortable working in a winery production facility as in a heritage bluestone homestead. The wine industry's specific electrical needs — refrigeration circuits, production equipment, hospitality lighting — are part of our regular work here.",
+    faqs: [
+      {
+        q: "Do you service winery electrical installations in the Heathcote region?",
+        a: "Yes. Winery electrical work is a speciality in this region, including production equipment power supplies, tank cooling circuits, cellar door fitouts, and hospitality kitchen wiring.",
+      },
+      {
+        q: "Can you install atmospheric lighting for a Heathcote cellar door?",
+        a: "Cellar door lighting design and installation is work we enjoy. The right combination of ambient and feature lighting significantly enhances the visitor experience and can be tied into smart controls for easy adjustment.",
+      },
+      {
+        q: "My Heathcote home is built on volcanic rock — does that affect underground cabling?",
+        a: "Rocky ground can require modified installation methods for underground cables. We use appropriate conduit systems and hand-dig or rock-saw where machine trenching isn't possible.",
+      },
+      {
+        q: "Do you install solar systems on Heathcote vineyard properties?",
+        a: "Yes. Vineyards are excellent candidates for solar, with large shed roofs and high energy consumption for refrigeration and processing. We design systems to offset the most energy-intensive parts of winery operations.",
+      },
+      {
+        q: "Can you help with electrical compliance for a new Heathcote tourism accommodation?",
+        a: "Yes. New tourism accommodation must meet specific electrical standards. We can install and certify the complete electrical installation, including emergency lighting, smoke detection, and RCD protection, all to current Australian Standards.",
+      },
+    ],
   },
   {
     slug: "highlands",
@@ -727,6 +1065,32 @@ export const TOWNS = [
     character:
       "A quiet semi-rural community attracting those seeking peaceful bush settings. Lifestyle property electrical work and underground cabling for outbuildings are commonly requested.",
     driveTime: "Approximately 20 minutes from Seymour",
+    extraParagraph:
+      "Tallarook State Forest covers much of the land surrounding the township, giving the area its strongly wooded character and making it a destination for bushwalkers and mountain bike riders. The railway station at Tallarook still operates as a stop on the Melbourne–Albury line, and several properties near the station are heritage-listed. The community's lifestyle property character means many residents have made the move from Melbourne seeking a quieter pace, and they often bring high expectations for home comfort, home automation, and renewable energy that we're well-placed to meet.",
+    serviceIntro:
+      "Tallarook's mix of heritage homes and lifestyle properties gives our work here real variety. We handle careful heritage wiring alongside modern smart home and solar installations for the area's growing community of tree-changers.",
+    faqs: [
+      {
+        q: "Can you wire a lifestyle property or hobby farm near Tallarook?",
+        a: "Yes. Lifestyle property and hobby farm wiring — sheds, studios, home offices, and solar installations — is exactly the kind of work we do in the Tallarook area.",
+      },
+      {
+        q: "Do you install home automation and smart lighting in Tallarook?",
+        a: "Smart home installations are popular with Tallarook's newer residents. We install smart lighting, automated blinds, security cameras, and centralised home control systems.",
+      },
+      {
+        q: "Can you install solar and battery storage at a Tallarook property?",
+        a: "Yes. Tallarook's clear skies and tree-change properties are ideal for solar. Battery storage is particularly popular here as residents seek greater energy independence.",
+      },
+      {
+        q: "My Tallarook property has old wiring from the 1950s — is it dangerous?",
+        a: "Wiring from that era can be dangerous if it hasn't been maintained. We recommend an inspection to identify any perished insulation, undersized conductors, or lack of RCD protection. We can stage the upgrade to suit your budget.",
+      },
+      {
+        q: "Do you do electrical work on properties adjoining Tallarook State Forest?",
+        a: "We can work on private properties adjoining the state forest. For work inside the forest itself or on CFA facilities, different regulations apply and we'd discuss these when quoting.",
+      },
+    ],
   },
   {
     slug: "puckapunyal",
@@ -739,6 +1103,32 @@ export const TOWNS = [
     character:
       "A unique community defined by its military character. Residential electrical services for the surrounding community are our focus here.",
     driveTime: "Approximately 15 minutes from Seymour",
+    extraParagraph:
+      "Puckapunyal Military Area is one of the largest and most significant defence installations in Australia, and the civilian residential properties surrounding the base form a close-knit community. While we don't work inside the secured military area itself, we service all the private residential properties in the broader Puckapunyal precinct, as well as rural properties and farming operations in the area. Residents of this unique community appreciate a contractor who understands the area and can respond quickly.",
+    serviceIntro:
+      "In the Puckapunyal residential community we provide prompt, reliable domestic electrical service. The community's high standards extend to their expectations of tradespeople, and we work hard to meet them.",
+    faqs: [
+      {
+        q: "Do you service private homes in the Puckapunyal residential area?",
+        a: "Yes. We service all private residential properties in and around Puckapunyal, including switchboard upgrades, safety switch installations, lighting upgrades, and fault finding.",
+      },
+      {
+        q: "Can you install solar power on a Puckapunyal area home?",
+        a: "Solar panel installation is available for private residential properties in the Puckapunyal area. We handle the full installation and connection to the grid through the appropriate energy retailer process.",
+      },
+      {
+        q: "Do you work on the farming properties surrounding Puckapunyal?",
+        a: "Yes. The rural properties and farms surrounding the military area are within our service area. We handle agricultural and rural residential electrical work throughout this district.",
+      },
+      {
+        q: "How quickly can you reach Puckapunyal for an emergency?",
+        a: "Puckapunyal is approximately 15 minutes from our Seymour base, making it one of our closer service areas. We can usually attend emergencies very quickly during business hours.",
+      },
+      {
+        q: "Do you need any special clearances to work in Puckapunyal?",
+        a: "No special clearances are needed for work on private residential properties in the Puckapunyal area. We work on the civilian residential side of the precinct like any other domestic property in our service area.",
+      },
+    ],
   },
   {
     slug: "whiteheads-creek",

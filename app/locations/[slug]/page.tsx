@@ -186,6 +186,11 @@ export default async function TownPage({ params }: Props) {
               <p className="text-[#3d5068] leading-relaxed mb-4">
                 {town.character}
               </p>
+              {"extraParagraph" in town && town.extraParagraph && (
+                <p className="text-[#3d5068] leading-relaxed mb-4">
+                  {town.extraParagraph as string}
+                </p>
+              )}
               <p className="text-[#3d5068] leading-relaxed">
                 Whether you need a simple electrical repair, a full switchboard
                 upgrade, or a new installation for your {town.name} property,
@@ -310,8 +315,9 @@ export default async function TownPage({ params }: Props) {
             Electrical Services in {town.name}
           </h2>
           <p className="text-[#6c757d] mb-8">
-            We provide our full range of electrical services to {town.name} and
-            surrounding areas:
+            {"serviceIntro" in town && town.serviceIntro
+              ? (town.serviceIntro as string)
+              : `We provide our full range of electrical services to ${town.name} and surrounding areas:`}
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {featuredServices.map((service) => (
@@ -337,6 +343,30 @@ export default async function TownPage({ params }: Props) {
           </Link>
         </div>
       </section>
+
+      {/* FAQs */}
+      {"faqs" in town && Array.isArray(town.faqs) && town.faqs.length > 0 && (
+        <section className="py-16 px-4 bg-white border-t border-[#e9ecef]">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-display font-bold text-3xl text-[#2a4861] mb-8">
+              Frequently Asked Questions — Electrician {town.name}
+            </h2>
+            <div className="space-y-4">
+              {(town.faqs as Array<{ q: string; a: string }>).map((faq, i) => (
+                <div
+                  key={i}
+                  className="bg-[#f8f9fa] rounded-xl p-6 border border-[#e9ecef]"
+                >
+                  <h3 className="font-display font-semibold text-lg text-[#2a4861] mb-2">
+                    {faq.q}
+                  </h3>
+                  <p className="text-[#3d5068] leading-relaxed">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CTASection
         heading={`Need an Electrician in ${town.name}?`}
