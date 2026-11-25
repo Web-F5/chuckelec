@@ -45,6 +45,36 @@ const GALLERY_ITEMS = [
     label: "Lighting",
     caption: "Commercial lighting installation",
   },
+  {
+    src: "/images/gallery/shed-lighting.webp",
+    alt: "Shed lighting installation by a licensed electrician",
+    label: "Rural",
+    caption: "Shed and outbuilding lighting",
+  },
+  {
+    src: "/images/gallery/sports-field-lighting.webp",
+    alt: "Sports field lighting installation by a licensed electrician",
+    label: "Commercial",
+    caption: "Sports field and outdoor lighting",
+  },
+  {
+    src: "/images/solar-and batteries/solar-and batteries-01.webp",
+    alt: "Solar panel and battery storage installation by a licensed electrician",
+    label: "Solar",
+    caption: "Solar panel and battery storage installation",
+  },
+  {
+    src: "/images/gallery/shed-powerpoint.webp",
+    alt: "Three-phase powerpoint installed in a workshop shed",
+    label: "Industrial",
+    caption: "Workshop and three-phase power installation",
+  },
+  {
+    src: "/images/gallery/bowling-green-lighting.webp",
+    alt: "Bowling green lighting installation by a licensed electrician",
+    label: "Lighting",
+    caption: "Outdoor and sports facility lighting",
+  },
 ];
 
 export default function GalleryPage() {
