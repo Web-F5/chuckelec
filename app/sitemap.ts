@@ -1,7 +1,20 @@
 import { MetadataRoute } from "next";
 import { SERVICES, TOWNS } from "@/lib/data";
+import { client } from "@/lib/sanity";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export const revalidate = 3600;
+
+async function getBlogSlugs(): Promise<{ slug: string; publishedAt: string }[]> {
+  try {
+    return await client.fetch(
+      `*[_type == "post"] { "slug": slug.current, publishedAt }`
+    );
+  } catch {
+    return [];
+  }
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = "https://chuckelec.com";
   const now = new Date();
 
@@ -9,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: base, priority: 1.0 },
     { url: `${base}/services`, priority: 0.9 },
     { url: `${base}/locations`, priority: 0.8 },
+    { url: `${base}/blog`, priority: 0.7 },
     { url: `${base}/gallery`, priority: 0.7 },
     { url: `${base}/faq`, priority: 0.7 },
     { url: `${base}/contact`, priority: 0.8 },
@@ -28,5 +42,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...servicePages, ...townPages];
+  const blogPosts = await getBlogSlugs();
+  const blogPages = blogPosts.map((p) => ({
+    url: `${base}/blog/${p.slug}`,
+    lastModified: p.publishedAt ? new Date(p.publishedAt) : now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...servicePages, ...townPages, ...blogPages];
 }
